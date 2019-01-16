@@ -13,5 +13,5 @@ RUN npm install -g yo \
 
 VOLUME /usr/src
 WORKDIR /usr/src
-USER /usr/src
+USER yeoman
 
