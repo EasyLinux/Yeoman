@@ -1,7 +1,7 @@
 FROM easylinux/apache
 LABEL author="Serge NOEL <serge.noel@easylinux.fr>"
 
-RUN apk add npm \
+RUN apk add npm composer \
     && adduser -D yeoman
 
 RUN npm install -g yo \
@@ -14,4 +14,3 @@ RUN npm install -g yo \
 VOLUME /usr/src
 WORKDIR /usr/src
 USER yeoman
-
